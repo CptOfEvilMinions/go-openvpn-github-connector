@@ -4,6 +4,21 @@
 ## Compile from source
 1. `GOOS=linux GOARCH=amd64 go build -o bin/go-openvpn-github-connector.bin main.go`
 
+## Generate Github token
+1. Login into Github
+1. Select profile icon in top right > Settings
+1. Select "Developer settings" > "Personal access tokens"
+1. Select "Generate new token"
+    1. Enter `go-openvpn-github-connector` for Note
+        1. ![token_name](.img/token_name.png)
+    1. Set an expiration date
+    1. Under `admin:org` check `read:org`
+        1. ![token_permission](.img/token_permission.png)
+    1. Select "Generate token"
+1. Make sure to copy your personal access token now. You won’t be able to see it again!
+1. Make sure to copy your personal access token now. You won’t be able to see it again!
+1. Make sure to copy your personal access token now. You won’t be able to see it again!
+
 
 ## Install/Setup go-openvpn-github-connector on Ubuntu Server 20.04 64-bit
 ### Install OpenVPN plugin
@@ -18,8 +33,6 @@
 organization: '<Github org>'
 team: '<github team in org>'
 token: '<Github USER token>'
-# Depth 0 - typically, client cert
-cert_depth: 0
 ```
 
 ### Setup OpenVPN server
