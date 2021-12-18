@@ -19,5 +19,5 @@ conf/settings.yaml
 conf/github.creds
 
 # bins
-bin/*
+bin/
 !bin/go-openvpn-github-connector.bin
